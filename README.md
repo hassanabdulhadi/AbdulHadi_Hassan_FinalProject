@@ -1,18 +1,67 @@
 # AbdulHadi_Hassan_FinalProject
 
-## Run
+UCL Match Predictor built with Streamlit.
 
+`streamlit_app.py` delegates to `gui.py`, so both local and hosted runs use the same full GUI.
+
+## 1) Setup
+
+### Windows (PowerShell)
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
 pip install -r requirements.txt
+```
+
+### Codespaces / Linux / macOS
+```bash
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
+```
+
+## 2) Run the App
+
+### Windows
+```powershell
 streamlit run streamlit_app.py
 ```
 
-`streamlit_app.py` now delegates to `gui.py`, so hosted environments and local runs use the same full GUI.
+### Codespaces / Linux / macOS
+```bash
+python3 -m streamlit run streamlit_app.py
+```
 
-## Required Assets
+Open the app at `http://localhost:8501` (or open port `8501` from the Codespaces Ports tab).
 
+## 3) Required Assets
+
+These files must exist in the repo:
 - `Starting pic.jpeg`
 - `fifa18_theme.mp3`
 - `assets/team_logos/*.png`
+
+## 4) Quick Troubleshooting
+
+### `streamlit: command not found`
+Use:
+```bash
+python3 -m streamlit run streamlit_app.py
+```
+
+### UI looks outdated or not loading correctly
+```bash
+pkill -f streamlit || true
+python3 -m streamlit cache clear
+python3 -m streamlit run streamlit_app.py --server.port 8501
+```
+Then hard refresh browser: `Ctrl+Shift+R`.
+
+### Verify entrypoint is correct
+`streamlit_app.py` should contain:
+```python
+from gui import main
+
+if __name__ == "__main__":
+    main()
+```
