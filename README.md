@@ -4,14 +4,12 @@ UCL Match Predictor built with Streamlit.
 
 `streamlit_app.py` delegates to `gui.py`, so both local and hosted runs use the same full GUI.
 
-## 1) Setup
+## 1) Setup (Works Without `.venv`)
 
 ### Windows (PowerShell)
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### Codespaces / Linux / macOS
@@ -20,11 +18,27 @@ python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 ```
 
+### Optional: Use a Virtual Environment
+
+Windows (PowerShell):
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
+
+Linux/macOS/Codespaces:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
 ## 2) Run the App
 
 ### Windows
 ```powershell
-streamlit run streamlit_app.py
+python -m streamlit run streamlit_app.py
 ```
 
 ### Codespaces / Linux / macOS
