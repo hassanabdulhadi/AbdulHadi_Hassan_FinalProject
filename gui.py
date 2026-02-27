@@ -157,7 +157,7 @@ TEXTS = {
         "lang_subtitle": "Select one option to continue",
         "en_btn": "ENGLISH INTERFACE",
         "zh_btn": "CHINESE INTERFACE",
-        "app_title": "UCL MATCH SELECT",
+        "app_title": "Choose Your Teams",
         "app_subtitle": "Select both sides to continue",
         "home": "HOME",
         "away": "AWAY",
