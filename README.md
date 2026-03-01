@@ -115,7 +115,10 @@ if __name__ == "__main__":
 ```
 
 
-AI Statement:
+## Academic Integrity & AI Usage Disclosure
+
+This project reflects my own original design decisions, system architecture, feature selection, model choice, and implementation logic. I took help and learn a lot of things from youtube in order to implement things in my code. All core components — including data processing, prediction methodology, interface design, and integration — were independently planned and developed by me while taking some help from AI.
+
 I used AI assistance (Codex) in the following ways while completing this project:
 •	I asked for help debugging my Streamlit GUI using the prompt:
 “I am making a GUI using Streamlit. Can you tell where the problem is? Also, there is a song and starting picture in the file. Use these files as following: use songs in the background repeatedly and use the starting picture in the first display.”
@@ -126,3 +129,7 @@ I used AI assistance (Codex) in the following ways while completing this project
 https://youtu.be/vmEHCJofslg?si=wbgQLuhHbbJUfI64 NO AI used
 •	I used AI to improve my machine learning model by implementing Softmax Regression with Gradient Descent. The prompt used was:
 “Write Python code that implements a 3-class softmax regression model from scratch using NumPy, including training with gradient descent and a function to predict probabilities.”
+
+
+At the end, I told AI to use comments below some functions in order for me to connect things with each other. 
+No AI output was copied blindly. Every implemented component was validated, modified, and integrated manually to align with project requirements and academic integrity standards.
