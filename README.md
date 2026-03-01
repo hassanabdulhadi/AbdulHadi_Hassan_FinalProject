@@ -4,6 +4,7 @@ UCL Match Predictor built with Streamlit.
 
 `streamlit_app.py` delegates to `gui.py`, so both local and hosted runs use the same full GUI.
 
+Repository Link: https://github.com/hassanabdulhadi/AbdulHadi_Hassan_FinalProject
 
 Project Description and Goal:
 
