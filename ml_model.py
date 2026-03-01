@@ -39,7 +39,6 @@ def _result_points(home_goals: int, away_goals: int) -> Tuple[float, float]:
 
 
 def _expected_score(elo_a: float, elo_b: float) -> float:
-    # Standard Elo expected score formula.
     return 1.0 / (1.0 + 10 ** ((elo_b - elo_a) / 400.0))
 
 
